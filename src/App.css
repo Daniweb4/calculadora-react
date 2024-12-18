@@ -1,0 +1,91 @@
+body{
+  background-color: blanchedalmond;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}.title{
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+} @keyframes typing {
+  from { 
+     width: 0;
+     } 
+     to{ 
+      
+      width: 100%; 
+     }
+    }
+    @keyframes blink-caret {
+       from, 
+       to { 
+        border-color: transparent; 
+      } 10% {
+         border-color: orange;
+      }}
+.content{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}form input{
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: right;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.teclado{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  
+}button{
+  padding: .9rem;
+  cursor: pointer;
+  
+  
+}.btn{
+  color: white;
+  background-color: #9579b0;
+  border-radius: 6px;
+  border: none;
+  transition: .3s;
+}.btn:hover{
+  transform: scale(1.1);
+  background-color: rgb(161, 122, 51);
+}.operadores{
+  transition: .3s;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: rgb(106, 115, 165);
+}.operadores:hover{
+  transform: scale(1.1);
+  background-color: rgb(118, 181, 115);
+}.delete{
+  background-color:#e74c3c;
+  border: none;
+  border-radius: 6px;
+  transition: .3s;
+}.delete:hover{
+  transform: scale(1.1);
+  background-color: rgb(219, 109, 19);
+}.clear{
+  background-color: hsl(50, 100%, 50%);
+  border: none;
+  border-radius: 6px;
+  transition: .3s;
+}.clear:hover{
+  transform: scale(1.1);
+  background-color: hsl(45, 100%, 50%);
+}
